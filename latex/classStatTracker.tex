@@ -1,0 +1,158 @@
+\hypertarget{classStatTracker}{}\doxysection{Stat\+Tracker Class Reference}
+\label{classStatTracker}\index{StatTracker@{StatTracker}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStatTracker_a8966aabbd4a2eaddd975fcfc137c2a07}{Stat\+Tracker}} (void)
+\begin{DoxyCompactList}\small\item\em Initialize counter variables and summation totals. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatTracker_ae67969a721b4a4ff38cf9fa16928b281}{add\+\_\+data}} (float new\+Data\+\_\+f)
+\begin{DoxyCompactList}\small\item\em Add a float to the data set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatTracker_a24dad0ccb80e777a48d6e31a4a2f0c08}{add\+\_\+data}} (int32\+\_\+t new\+Data\+\_\+32s)
+\begin{DoxyCompactList}\small\item\em Add a signed 32-\/bit integer to the data set. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatTracker_ad50a6db634f3bd3dd833d4f06b4eddb6}{add\+\_\+data}} (uint32\+\_\+t new\+Data\+\_\+32u)
+\begin{DoxyCompactList}\small\item\em Add an unsigned 32-\/bit integer to the data set. \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classStatTracker_a9c58a53a361938e03690c6908d2399e7}{num\+\_\+points}} (void)
+\begin{DoxyCompactList}\small\item\em Method for getting the number of data points in the set. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classStatTracker_a8c0d201e498e31cbdf42e21cac5200e8}{average}} (void)
+\begin{DoxyCompactList}\small\item\em Method for calculating the data set average. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classStatTracker_a3418a2c1e71561b48b40badc59d6500b}{std\+\_\+dev}} (void)
+\begin{DoxyCompactList}\small\item\em Method for calculating the data set standard deviation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStatTracker_a39f4777ec147f38013110a419d1287db}{clear}} (void)
+\begin{DoxyCompactList}\small\item\em Method for clearing the data set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStatTracker_a663340e44e7989932f96f07b6ed16716}\label{classStatTracker_a663340e44e7989932f96f07b6ed16716}} 
+uint32\+\_\+t {\bfseries count\+\_\+float}
+\item 
+\mbox{\Hypertarget{classStatTracker_a538e1c46948a498d170ec38e10e5d99f}\label{classStatTracker_a538e1c46948a498d170ec38e10e5d99f}} 
+uint32\+\_\+t {\bfseries count\+\_\+32u}
+\item 
+\mbox{\Hypertarget{classStatTracker_ad81966059b1bec722d5ceae71d7f5975}\label{classStatTracker_ad81966059b1bec722d5ceae71d7f5975}} 
+uint32\+\_\+t {\bfseries count\+\_\+32s}
+\item 
+\mbox{\Hypertarget{classStatTracker_ab9d812037d7757412a20e1700f019e76}\label{classStatTracker_ab9d812037d7757412a20e1700f019e76}} 
+uint32\+\_\+t {\bfseries count\+Total}
+\item 
+\mbox{\Hypertarget{classStatTracker_a75a44b7f27c14fc4a7426a9c922d728a}\label{classStatTracker_a75a44b7f27c14fc4a7426a9c922d728a}} 
+float {\bfseries total\+Sum}
+\item 
+\mbox{\Hypertarget{classStatTracker_a286c411d17a64f2bd7ff802b3f5205f2}\label{classStatTracker_a286c411d17a64f2bd7ff802b3f5205f2}} 
+float {\bfseries total\+Squares\+Sum}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStatTracker_a8966aabbd4a2eaddd975fcfc137c2a07}\label{classStatTracker_a8966aabbd4a2eaddd975fcfc137c2a07}} 
+\index{StatTracker@{StatTracker}!StatTracker@{StatTracker}}
+\index{StatTracker@{StatTracker}!StatTracker@{StatTracker}}
+\doxysubsubsection{\texorpdfstring{StatTracker()}{StatTracker()}}
+{\footnotesize\ttfamily Stat\+Tracker\+::\+Stat\+Tracker (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initialize counter variables and summation totals. 
+
+This constructor initializes counter variables used for keeping track of data added to a \char`\"{}set\char`\"{}, as well as summation values used for calculating average and standard deviation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStatTracker_ae67969a721b4a4ff38cf9fa16928b281}\label{classStatTracker_ae67969a721b4a4ff38cf9fa16928b281}} 
+\index{StatTracker@{StatTracker}!add\_data@{add\_data}}
+\index{add\_data@{add\_data}!StatTracker@{StatTracker}}
+\doxysubsubsection{\texorpdfstring{add\_data()}{add\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Stat\+Tracker\+::add\+\_\+data (\begin{DoxyParamCaption}\item[{float}]{new\+Data\+\_\+f }\end{DoxyParamCaption})}
+
+
+
+Add a float to the data set. 
+
+This method adds a new data point of type {\ttfamily float} to the existing data set. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Data\+\_\+f} & The float to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatTracker_a24dad0ccb80e777a48d6e31a4a2f0c08}\label{classStatTracker_a24dad0ccb80e777a48d6e31a4a2f0c08}} 
+\index{StatTracker@{StatTracker}!add\_data@{add\_data}}
+\index{add\_data@{add\_data}!StatTracker@{StatTracker}}
+\doxysubsubsection{\texorpdfstring{add\_data()}{add\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily void Stat\+Tracker\+::add\+\_\+data (\begin{DoxyParamCaption}\item[{int32\+\_\+t}]{new\+Data\+\_\+32s }\end{DoxyParamCaption})}
+
+
+
+Add a signed 32-\/bit integer to the data set. 
+
+This method adds a new data point of type {\ttfamily int32\+\_\+t} to the existing data set. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Data\+\_\+32s} & The signed 32-\/bit integer to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatTracker_ad50a6db634f3bd3dd833d4f06b4eddb6}\label{classStatTracker_ad50a6db634f3bd3dd833d4f06b4eddb6}} 
+\index{StatTracker@{StatTracker}!add\_data@{add\_data}}
+\index{add\_data@{add\_data}!StatTracker@{StatTracker}}
+\doxysubsubsection{\texorpdfstring{add\_data()}{add\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily void Stat\+Tracker\+::add\+\_\+data (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{new\+Data\+\_\+32u }\end{DoxyParamCaption})}
+
+
+
+Add an unsigned 32-\/bit integer to the data set. 
+
+This method adds a new data point of type {\ttfamily uint32\+\_\+t} to the existing data set. 
+\begin{DoxyParams}{Parameters}
+{\em new\+Data\+\_\+32u} & The unsigned 32-\/bit integer to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classStatTracker_a8c0d201e498e31cbdf42e21cac5200e8}\label{classStatTracker_a8c0d201e498e31cbdf42e21cac5200e8}} 
+\index{StatTracker@{StatTracker}!average@{average}}
+\index{average@{average}!StatTracker@{StatTracker}}
+\doxysubsubsection{\texorpdfstring{average()}{average()}}
+{\footnotesize\ttfamily float Stat\+Tracker\+::average (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Method for calculating the data set average. 
+
+This method calculates the average value of the data set from the total sum and number of data points. \begin{DoxyReturn}{Returns}
+Average of the data set as a {\ttfamily float} data type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatTracker_a39f4777ec147f38013110a419d1287db}\label{classStatTracker_a39f4777ec147f38013110a419d1287db}} 
+\index{StatTracker@{StatTracker}!clear@{clear}}
+\index{clear@{clear}!StatTracker@{StatTracker}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Stat\+Tracker\+::clear (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Method for clearing the data set. 
+
+This method resets all counter variables, as well as setting summations to zero, hence resetting the data set back to an initialized state. \mbox{\Hypertarget{classStatTracker_a9c58a53a361938e03690c6908d2399e7}\label{classStatTracker_a9c58a53a361938e03690c6908d2399e7}} 
+\index{StatTracker@{StatTracker}!num\_points@{num\_points}}
+\index{num\_points@{num\_points}!StatTracker@{StatTracker}}
+\doxysubsubsection{\texorpdfstring{num\_points()}{num\_points()}}
+{\footnotesize\ttfamily uint32\+\_\+t Stat\+Tracker\+::num\+\_\+points (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Method for getting the number of data points in the set. 
+
+This method is for determining how many data points have been added to the data set since the last initialization or clear. \begin{DoxyReturn}{Returns}
+Number of data points added as a {\ttfamily uint32\+\_\+t} data type. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStatTracker_a3418a2c1e71561b48b40badc59d6500b}\label{classStatTracker_a3418a2c1e71561b48b40badc59d6500b}} 
+\index{StatTracker@{StatTracker}!std\_dev@{std\_dev}}
+\index{std\_dev@{std\_dev}!StatTracker@{StatTracker}}
+\doxysubsubsection{\texorpdfstring{std\_dev()}{std\_dev()}}
+{\footnotesize\ttfamily float Stat\+Tracker\+::std\+\_\+dev (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Method for calculating the data set standard deviation. 
+
+This method calculates the standard deviation of the data set from the summation of the square of each data point and the average of the data set. \begin{DoxyReturn}{Returns}
+Standard deviation of the data set as a {\ttfamily float} data type. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stat__tracker_8h}{stat\+\_\+tracker.\+h}}\item 
+\mbox{\hyperlink{stat__tracker_8cpp}{stat\+\_\+tracker.\+cpp}}\end{DoxyCompactItemize}
